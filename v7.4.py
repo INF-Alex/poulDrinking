@@ -254,7 +254,9 @@ def main(p_dir='./p1.jpg',X=7,Y=7):
     for turn in range(2):
         m = 0
         mc = RED
-        for c in range(1,BOTTLE_NUM-1):
+        # 此处的颜色不知道前面出了什么BUG，导致从2开始，那就在这里改了(>_<)
+        # for c in range(1,BOTTLE_NUM-1):
+        for c in range(2,BOTTLE_NUM):
             t = 0
             for x in range(2,BOTTLE_NUM):
                 if Bottle_start[x][-1] == c:
